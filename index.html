@@ -44,6 +44,7 @@
       border: 1px solid #00ffcc;
       padding: 10px;
       box-shadow: 0 0 10px #00ffcc55;
+      justify-content: center;
     }
 
     .tab {
@@ -67,6 +68,7 @@
       padding: 20px;
       display: none;
       box-shadow: 0 0 15px #00ffcc33;
+      text-align: center;
     }
 
     .content.active {
@@ -128,17 +130,15 @@
       50% { height: 40px; }
     }
 
-    /* Styl logo */
     .logo {
       display: block;
       margin: 20px auto;
-      width: 300px; /* Zmieniono na większy rozmiar */
+      width: 300px;
       height: auto;
     }
   </style>
 </head>
 <body>
-  <!-- Dodanie logo stacji -->
   <img src="przester.png" alt="Logo Stacji" class="logo" />
 
   <div class="background-wave">
@@ -151,8 +151,8 @@
     <button class="tab" onclick="showTab('player')">Player</button>
     <button class="tab" onclick="showTab('about')">O nas</button>
     <button class="tab" onclick="showTab('album')">Płyty dnia</button>
+    <button class="tab" onclick="showTab('schedule')">Harmonogram</button>
     <button class="tab" onclick="showTab('contact')">Kontakt</button>
-    
   </div>
 
   <div id="player" class="content active">
@@ -186,19 +186,18 @@
     </ul>
   </div>
 
-  <div id="contact" class="content">
-    <h2>Kontakt</h2>
-  <p>
-    soon.
-  </p>
+  <div id="schedule" class="content">
+    <h2>Harmonogram</h2>
   </div>
 
+  <div id="contact" class="content">
+    <h2>Kontakt</h2>
+    <p> soon </p>
+  </div>
 
-  <!-- Skrypty od AsuraHosting -->
   <script src="https://cast4.asurahosting.com:2199/system/streaminfo.js"></script>
   <script src="https://cast4.asurahosting.com:2199/system/player.js"></script>
 
-  <!-- Przełączanie zakładek -->
   <script>
     function showTab(id) {
       document.querySelectorAll('.content').forEach(el => el.classList.remove('active'));
