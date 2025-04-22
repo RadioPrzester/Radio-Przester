@@ -9,7 +9,7 @@
       margin: 0;
       padding: 20px;
       font-family: 'Courier New', monospace;
-      color: #00ffcc;
+      color: #ffffff;
       overflow-x: hidden;
       background: #111;
     }
@@ -32,6 +32,10 @@
       transform: translateY(60%);
     }
 
+    .background-wave svg path {
+      fill: #ffffff22;
+    }
+
     @keyframes waveMove {
       0% { transform: translateY(60%) translateX(0); }
       100% { transform: translateY(60%) translateX(-50%); }
@@ -41,9 +45,9 @@
       display: flex;
       gap: 10px;
       background: #111;
-      border: 1px solid #00ffcc;
+      border: 1px solid #ffffff;
       padding: 10px;
-      box-shadow: 0 0 10px #00ffcc55;
+      box-shadow: 0 0 10px #ffffff55;
       justify-content: center;
     }
 
@@ -52,22 +56,22 @@
       padding: 8px 14px;
       border: none;
       background: transparent;
-      color: #00ffcc;
+      color: #ffffff;
       font-size: 16px;
       transition: all 0.2s ease;
     }
 
     .tab:hover {
-      text-shadow: 0 0 5px #00ffcc;
+      text-shadow: 0 0 5px #ffffff;
     }
 
     .content {
       margin-top: 20px;
       background: #222;
-      border: 1px solid #00ffcc;
+      border: 1px solid #ffffff;
       padding: 20px;
       display: none;
-      box-shadow: 0 0 15px #00ffcc33;
+      box-shadow: 0 0 15px #ffffff33;
       text-align: center;
     }
 
@@ -84,21 +88,21 @@
     input, textarea, button {
       width: 100%;
       background: #111;
-      border: 1px solid #00ffcc;
-      color: #00ffcc;
+      border: 1px solid #ffffff;
+      color: #ffffff;
       padding: 10px;
       margin-top: 10px;
     }
 
     button {
-      background: #00ffcc;
+      background: #ffffff;
       color: #000;
       cursor: pointer;
       font-weight: bold;
     }
 
     button:hover {
-      background: #00ccaa;
+      background: #cccccc;
     }
 
     .equalizer {
@@ -112,9 +116,9 @@
 
     .bar {
       width: 6px;
-      background: #00ffcc;
+      background: #ffffff;
       animation: bounce 1s infinite ease-in-out;
-      box-shadow: 0 0 8px #00ffcc88;
+      box-shadow: 0 0 8px #ffffff88;
     }
 
     .bar:nth-child(1) { animation-delay: 0s; }
@@ -143,7 +147,7 @@
 
   <div class="background-wave">
     <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
-      <path fill="#00ffcc22" d="M0,160 C360,80 1080,240 1440,160 L1440,320 L0,320 Z"></path>
+      <path fill="#ffffff22" d="M0,160 C360,80 1080,240 1440,160 L1440,320 L0,320 Z"></path>
     </svg>
   </div>
 
@@ -190,18 +194,16 @@
   <div id="schedule" class="content">
     <h2>Harmonogram</h2>
     
-<p>▪︎ 8.00-10.00 - Zagraniczny rock</p>
-<p>▪︎ 10.00-12.00 - Polski rock</p>
-<p>▪︎ 12.00-14.00 - Polski hip-hop</p>
-<p>▪︎ 14.00-15.00 - Zagraniczny hip-hop</p>
-<p>▪︎ 15.00-16.00 - Płyta Dnia</p>
-<p>▪︎ 16.00-17.00 - Audycja</p>
-<p>▪︎ 17.00-18.00 - Polski podziemny hip-hop</p>
-<p>▪︎ 18.00-20.00 - Muzyka alternatywna</p>
-<p>▪︎ 20.00-8.00 - Muzyka różna</p>
-  
+    <p>▪︎ 8.00-10.00 - Zagraniczny rock</p>
+    <p>▪︎ 10.00-12.00 - Polski rock</p>
+    <p>▪︎ 12.00-14.00 - Polski hip-hop</p>
+    <p>▪︎ 14.00-15.00 - Zagraniczny hip-hop</p>
+    <p>▪︎ 15.00-16.00 - Płyta Dnia</p>
+    <p>▪︎ 16.00-17.00 - Audycja</p>
+    <p>▪︎ 17.00-18.00 - Polski podziemny hip-hop</p>
+    <p>▪︎ 18.00-20.00 - Muzyka alternatywna</p>
+    <p>▪︎ 20.00-8.00 - Muzyka różna</p>
   </div>
-
 
   <script src="https://cast4.asurahosting.com:2199/system/streaminfo.js"></script>
   <script src="https://cast4.asurahosting.com:2199/system/player.js"></script>
